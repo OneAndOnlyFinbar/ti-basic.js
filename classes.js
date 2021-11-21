@@ -95,7 +95,11 @@ class Program{
         })
     }
 }
-
+/**
+ * @summary Creates a new temporary program.
+ * @description Creates a temporary program, when you compile the temporary program instead of compiling to a text file it returns the text.
+ * @return {Object} Temporary program.
+ */
 class TemporaryProgram{
     constructor() {
         this.code = [];
