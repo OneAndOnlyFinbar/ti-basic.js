@@ -1,6 +1,9 @@
 # TI-Basic Node.js Compiler
-Author: finbar<br>
-Github: https://github.com/OneAndonlyFinbar/ti-basic.js
+<img src="https://img.shields.io/npm/v/ti-basic?style=for-the-badge"></img>
+
+Author: finbar <br>
+Github: https://github.com/OneAndonlyFinbar/ti-basic.js <br>
+NPM: https://www.npmjs.com/package/ti-basic <br>
 
 This module can write TI-Basic code from Node.js. <br>
 Note: This does not directly evaluate javascript and convert it to TI-Basic
