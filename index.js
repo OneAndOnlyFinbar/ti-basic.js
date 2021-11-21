@@ -1,2 +1,6 @@
 const { Program } = require('./classes.js')
-exports.Program = Program;
+const { TemporaryProgram } = require('./classes.js');
+module.exports = {
+    Program,
+    TemporaryProgram
+}
