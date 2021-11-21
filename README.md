@@ -1,8 +1,9 @@
 # TI-Basic Node.js Compiler
 Author: finbar<br>
-Docs: ti-basic-compiler.finbar.xyz
+Github: https://github.com/OneAndonlyFinbar/ti-basic.js
 
-This module can write TI-Basic code from Node.js. Note: This does not directly translate javascript to ti-basic, it only writes code from written functions.
+This module can write TI-Basic code from Node.js. <br>
+Note: This does not directly evaluate javascript and convert it to TI-Basic
 
 <hr>
 
@@ -36,4 +37,38 @@ program.pause();
 
 //Compiles the program into TI-Basic code.
 program.compile();
+```
+
+# If/Else Statements
+If/else statements can be used to create conditional logic. An example of a program that uses if/else statements is the following:
+```
+const program = new Program('./program.txt');
+program.print('Enter a number: ');
+program.storeResponse('A');
+await program.createIfElse({
+    condition: 'A=1',
+    true: async function(program) {
+        await program.print('True');
+        await program.stop();
+        return program;
+    },
+    false: async function (program){
+        await program.print('False');
+        await program.stop();
+        return program;
+    }
+});
+```
+In the program above the program will ask for a number user input. If the number equals 1 it will print `True` to console, otherwise it will print `False` to console.
+
+if/else Statement functions (`true` and `false`) have a `program` variable passed to them. This variable is the program object for that condition. (`true` or `false`)<br>
+At the end of the `true`/`false` statements be sure to return the program.<br>
+The condition is not a regular javascript comparison, but instead a TI-Basic expression. Examples of TI-Basic expressions are below<br>
+```
+1=1
+A=1
+A=B
+A=B+C
+A=B-C
+2>1
 ```
