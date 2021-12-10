@@ -1,5 +1,5 @@
 # TI-Basic Node.js Compiler
-<a href="https://www.npmjs.com/package/ti"><img src="https://img.shields.io/npm/v/ti-basic?style=for-the-badge"></img></a>
+<a href="https://www.npmjs.com/package/ti-basic"><img src="https://img.shields.io/npm/v/ti-basic?style=for-the-badge"></img></a>
 
 Author: finbar <br>
 Github: https://github.com/OneAndonlyFinbar/ti-basic.js <br>
